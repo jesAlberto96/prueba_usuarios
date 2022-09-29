@@ -1,0 +1,17 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+# user:
+#  - register: POST /api/register
+#  - login: POST /api/login_check
+
+# app.swagger_ui:
+#     path: /api/doc
+#     methods: GET
+#     defaults: { _controller: nelmio_api_doc.controller.swagger_ui }
+
+users:
+    # type      : rest
+    resource  : App\Controller\ApiController
+    prefix    : api
